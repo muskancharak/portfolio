@@ -7,180 +7,6 @@
 // import { ContactMe } from "../components/ContactME";
 // import { NavBar } from "../components/NavBar";
 // import { Skills } from "../components/Skills";
-
-// export const Home = () => {
-//   // All refs typed as HTMLDivElement | null
-//   const aboutRef = useRef<HTMLDivElement | null>(null);
-//   const experienceRef = useRef<HTMLDivElement | null>(null);
-//   const projectsRef = useRef<HTMLDivElement | null>(null);
-//   const contactRef = useRef<HTMLDivElement | null>(null);
-//   const skillRef = useRef<HTMLDivElement | null>(null);
-
-
-//   // Scroll function safely handles nullable refs
-//   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
-//     ref.current?.scrollIntoView({ behavior: "smooth" });
-//   };
-
-//   return (
-    
-//     <div className="min-h-screen bg-gradient-to-r from-pink-200 via-orange-200 to-yellow-200 m-0 p-0">
-//        <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
-//       <div className="absolute w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob top-10 left-10"></div>
-      
-//       <div className="absolute w-72 h-72 bg-yellow-400 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000 top-40 right-10"></div>
-      
-//       <div className="absolute w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-4000 bottom-10 left-1/2"></div>
-//     </div>
-//       {/* Navbar with optional scrolling */}
-//       <NavBar
-//         scrollToSection={scrollToSection}
-//         refs={{ aboutRef, experienceRef, projectsRef, contactRef ,skillRef}}
-//       />
-
-//       {/* Profile section with buttons */}
-//       <Profile
-//         scrollToSection={scrollToSection}
-//         experienceRef={experienceRef}
-//         projectsRef={projectsRef}
-//         contactRef={contactRef}
-//         skillRef={skillRef}
-//       />
-
-//       {/* Sections */}
-//       <div ref={aboutRef}>
-//         <AboutMe />
-//       </div>
-
-//       <div ref={experienceRef}>
-//         <Experience />
-//       </div>
-
-//       <div ref={projectsRef}
-//       >
-//         <Projects />
-//       </div>
-
-//       <div ref={skillRef}>
-//         <Skills />
-//       </div>
-
-//       <div ref={contactRef}>
-//         <ContactMe />
-//       </div>
-//     </div>
-//   );
-// };
-
-
-// import { useRef } from "react";
-// import { Profile } from "../components/Profile";
-// import { AboutMe } from "../components/AboutMe";
-// import { Experience } from "../components/Experience";
-// import { Projects } from "../components/Projects";
-// import { ContactMe } from "../components/ContactME";
-// import { NavBar } from "../components/NavBar";
-// import { Skills } from "../components/Skills";
-// import ParticleBackground from "../components/Particles";
-
-// export const Home = () => {
-//   const aboutRef = useRef<HTMLDivElement | null>(null);
-//   const experienceRef = useRef<HTMLDivElement | null>(null);
-//   const projectsRef = useRef<HTMLDivElement | null>(null);
-//   const contactRef = useRef<HTMLDivElement | null>(null);
-//   const skillRef = useRef<HTMLDivElement | null>(null);
-
-//   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
-//     ref.current?.scrollIntoView({ behavior: "smooth" });
-//   };
-
-//   return (
-//     <div className="relative min-h-screen bg-gradient-to-r from-pink-200 via-orange-200 to-yellow-200">
-
-//       {/* 🔥 Animated Background */}
-// <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
-
-//   {/* Blob 1 */}
-//   <div
-//     className="absolute w-72 h-72 bg-pink-400 rounded-full blur-3xl opacity-60 top-10 left-10"
-//     style={{
-//       animation: "blob 8s infinite ease-in-out"
-//     }}
-//   ></div>
-
-//   {/* Blob 2 */}
-//   <div
-//     className="absolute w-72 h-72 bg-yellow-400 rounded-full blur-3xl opacity-60 top-40 right-10"
-//     style={{
-//       animation: "blob 8s infinite ease-in-out",
-//       animationDelay: "2s"
-//     }}
-//   ></div>
-
-//   {/* Blob 3 */}
-//   <div
-//     className="absolute w-72 h-72 bg-purple-400 rounded-full blur-3xl opacity-60 bottom-10 left-1/2"
-//     style={{
-//       animation: "blob 8s infinite ease-in-out",
-//       animationDelay: "4s",
-//       background:"red"
-//     }}
-//   ></div>
-
-// </div>
-//  <ParticleBackground />
-
-
-//       {/* ✅ Content Layer */}
-//       <div className="relative z-10">
-
-//         <NavBar
-//           scrollToSection={scrollToSection}
-//           refs={{ aboutRef, experienceRef, projectsRef, contactRef, skillRef }}
-//         />
-
-//         <Profile
-//           scrollToSection={scrollToSection}
-//           experienceRef={experienceRef}
-//           projectsRef={projectsRef}
-//           contactRef={contactRef}
-//           skillRef={skillRef}
-//         />
-
-//         <div ref={aboutRef}>
-//           <AboutMe />
-//         </div>
-
-//         <div ref={experienceRef}>
-//           <Experience />
-//         </div>
-
-//         <div ref={projectsRef}>
-//           <Projects />
-//         </div>
-
-//         <div ref={skillRef}>
-//           <Skills />
-//         </div>
-
-//         <div ref={contactRef}>
-//           <ContactMe />
-//         </div>
-
-//       </div>
-//     </div>
-//   );
-// };
-
-
-// import { useRef } from "react";
-// import { Profile } from "../components/Profile";
-// import { AboutMe } from "../components/AboutMe";
-// import { Experience } from "../components/Experience";
-// import { Projects } from "../components/Projects";
-// import { ContactMe } from "../components/ContactME";
-// import { NavBar } from "../components/NavBar";
-// import { Skills } from "../components/Skills";
 // import ParticleBackground from "../components/Particles";
 
 // export const Home = () => {
@@ -198,32 +24,22 @@
 //     <div className="relative min-h-screen">
 
 //       {/* 🌈 Gradient Background */}
-//     <div className="relative min-h-screen bg-gradient-to-r from-rose-300 via-orange-300 to-yellow-300">
+//       <div className="absolute inset-0 -z-30 bg-gradient-to-r from-rose-300 via-orange-300 to-yellow-300" />
 
 //       {/* 🔥 Animated Blobs */}
 //       <div className="absolute inset-0 -z-20 pointer-events-none">
-
 //         <div
-//           className="absolute w-72 h-72 bg-pink-400 rounded-full blur-3xl opacity-60 mix-blend-multiply top-10 left-10"
+//           className="absolute w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 bg-pink-400 rounded-full blur-3xl opacity-60 mix-blend-multiply top-5 left-2 sm:left-10"
 //           style={{ animation: "blob 8s infinite ease-in-out" }}
 //         />
-
 //         <div
-//           className="absolute w-72 h-72 bg-yellow-400 rounded-full blur-3xl opacity-60 mix-blend-multiply top-40 right-10"
-//           style={{
-//             animation: "blob 8s infinite ease-in-out",
-//             animationDelay: "2s",
-//           }}
+//           className="absolutew-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 bg-yellow-400 rounded-full blur-3xl opacity-60 mix-blend-multiply top-20 right-2 sm:right-10"
+//           style={{ animation: "blob 8s infinite ease-in-out", animationDelay: "2s" }}
 //         />
-
 //         <div
-//           className="absolute w-72 h-72 bg-purple-400 rounded-full blur-3xl opacity-60 mix-blend-multiply bottom-10 left-1/2"
-//           style={{
-//             animation: "blob 8s infinite ease-in-out",
-//             animationDelay: "4s",
-//           }}
+//           className="absolute w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 bg-purple-400 rounded-full blur-3xl opacity-60 mix-blend-multiply bottom-5 left-1/3 sm:left-1/2"
+//           style={{ animation: "blob 8s infinite ease-in-out", animationDelay: "4s" }}
 //         />
-
 //       </div>
 
 //       {/* ✨ PARTICLES BACKGROUND */}
@@ -232,13 +48,11 @@
 //       </div>
 
 //       {/* ✅ Content Layer */}
-//       <div className="relative z-10">
-
+//       <div className="relative z-10 pt-5 px-4 sm:px-6 md:px-10 max-w-7xl mx-auto">
 //         <NavBar
 //           scrollToSection={scrollToSection}
 //           refs={{ aboutRef, experienceRef, projectsRef, contactRef, skillRef }}
 //         />
-
 //         <Profile
 //           scrollToSection={scrollToSection}
 //           experienceRef={experienceRef}
@@ -246,33 +60,16 @@
 //           contactRef={contactRef}
 //           skillRef={skillRef}
 //         />
-
-//         <div ref={aboutRef}>
-//           <AboutMe />
-//         </div>
-
-//         <div ref={experienceRef}>
-//           <Experience />
-//         </div>
-
-//         <div ref={projectsRef}>
-//           <Projects />
-//         </div>
-
-//         <div ref={skillRef}>
-//           <Skills />
-//         </div>
-
-//         <div ref={contactRef}>
-//           <ContactMe />
-//         </div>
-
+//         <div ref={aboutRef} className="mt-16 md:mt-24"><AboutMe /></div>
+//         <div ref={experienceRef} className="mt-16 md:mt-24"><Experience /></div>
+//         <div ref={projectsRef} className="mt-16 md:mt-24"><Projects /></div>
+//         <div ref={skillRef} className="mt-16 md:mt-24"><Skills /></div>
+//         <div ref={contactRef} className="mt-16 md:mt-24"><ContactMe /></div>
 //       </div>
-//     </div>
+
 //     </div>
 //   );
 // };
-
 
 import { useRef } from "react";
 import { Profile } from "../components/Profile";
@@ -291,12 +88,21 @@ export const Home = () => {
   const contactRef = useRef<HTMLDivElement | null>(null);
   const skillRef = useRef<HTMLDivElement | null>(null);
 
+  // ✅ FIXED scroll (prevents navbar overlap)
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+    if (ref.current) {
+      const yOffset = -80;
+      const y =
+        ref.current.getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
   };
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-x-hidden">
 
       {/* 🌈 Gradient Background */}
       <div className="absolute inset-0 -z-30 bg-gradient-to-r from-rose-300 via-orange-300 to-yellow-300" />
@@ -304,44 +110,66 @@ export const Home = () => {
       {/* 🔥 Animated Blobs */}
       <div className="absolute inset-0 -z-20 pointer-events-none">
         <div
-          className="absolute w-72 h-72 bg-pink-400 rounded-full blur-3xl opacity-60 mix-blend-multiply top-10 left-10"
+          className="absolute w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 bg-pink-400 rounded-full blur-3xl opacity-60 mix-blend-multiply top-5 left-2 sm:left-10"
           style={{ animation: "blob 8s infinite ease-in-out" }}
         />
         <div
-          className="absolute w-72 h-72 bg-yellow-400 rounded-full blur-3xl opacity-60 mix-blend-multiply top-40 right-10"
+          className="absolute w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 bg-yellow-400 rounded-full blur-3xl opacity-60 mix-blend-multiply top-20 right-2 sm:right-10"
           style={{ animation: "blob 8s infinite ease-in-out", animationDelay: "2s" }}
         />
         <div
-          className="absolute w-72 h-72 bg-purple-400 rounded-full blur-3xl opacity-60 mix-blend-multiply bottom-10 left-1/2"
+          className="absolute w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 bg-purple-400 rounded-full blur-3xl opacity-60 mix-blend-multiply bottom-5 left-1/3 sm:left-1/2"
           style={{ animation: "blob 8s infinite ease-in-out", animationDelay: "4s" }}
         />
       </div>
 
-      {/* ✨ PARTICLES BACKGROUND */}
-      <div className="absolute inset-0 -z-10 pointer-events-none">
+      {/* ✨ PARTICLES (hidden on small screens for performance) */}
+      <div className="absolute inset-0 -z-10 pointer-events-none hidden sm:block">
         <ParticleBackground />
       </div>
 
-      {/* ✅ Content Layer */}
-      <div className="relative z-10 pt-5">
+      {/* ✅ Main Content */}
+      <div className="relative z-10 pt-5 px-4 sm:px-6 md:px-10 max-w-7xl mx-auto">
+
+        {/* Navbar */}
         <NavBar
           scrollToSection={scrollToSection}
           refs={{ aboutRef, experienceRef, projectsRef, contactRef, skillRef }}
         />
-        <Profile
-          scrollToSection={scrollToSection}
-          experienceRef={experienceRef}
-          projectsRef={projectsRef}
-          contactRef={contactRef}
-          skillRef={skillRef}
-        />
-        <div ref={aboutRef}><AboutMe /></div>
-        <div ref={experienceRef}><Experience /></div>
-        <div ref={projectsRef}><Projects /></div>
-        <div ref={skillRef}><Skills /></div>
-        <div ref={contactRef}><ContactMe /></div>
-      </div>
 
+        {/* Profile */}
+        <div className="mt-10">
+          <Profile
+            scrollToSection={scrollToSection}
+            experienceRef={experienceRef}
+            projectsRef={projectsRef}
+            contactRef={contactRef}
+            skillRef={skillRef}
+          />
+        </div>
+
+        {/* Sections */}
+        <div ref={aboutRef} className="mt-16 md:mt-24">
+          <AboutMe />
+        </div>
+
+        <div ref={experienceRef} className="mt-16 md:mt-24">
+          <Experience />
+        </div>
+
+        <div ref={projectsRef} className="mt-16 md:mt-24">
+          <Projects />
+        </div>
+
+        <div ref={skillRef} className="mt-16 md:mt-24">
+          <Skills />
+        </div>
+
+        <div ref={contactRef} className="mt-16 md:mt-24">
+          <ContactMe />
+        </div>
+
+      </div>
     </div>
   );
 };
