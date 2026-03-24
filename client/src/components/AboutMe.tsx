@@ -104,16 +104,18 @@ export const AboutMe = () => {
           </p>
 
           <div className="mt-6 md:mt-10">
-            <a
-             href = "../../public/Muskan CV - MERN Stack (1) (1) (1).pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl w-full sm:w-auto">
-                Download CV
-              </button>
-            </a>
-          </div>
+  <a
+    href="/Muskan-CV.pdf"
+    download
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl w-full sm:w-auto">
+      Download CV
+    </button>
+  </a>
+</div>
+           
         </div>
 
       </div>
