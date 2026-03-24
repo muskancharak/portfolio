@@ -105,7 +105,7 @@ export const AboutMe = () => {
 
           <div className="mt-6 md:mt-10">
             <a
-             href = "../../dist/Muskan CV - MERN Stack (1) (1) (1).pdf"
+             href = "../../public/Muskan CV - MERN Stack (1) (1) (1).pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
